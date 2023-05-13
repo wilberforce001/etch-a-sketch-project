@@ -29,5 +29,14 @@ function changeSize(input) {
 }
 
 function colorSquare() {
-    this.style.backgroundColor = "black"
+    if (color === 'random') {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+
+    } else {
+        this.style.backgroundColor = color;
+    }
+}
+
+function changeColor(choice) {
+    color = choice;
 }
