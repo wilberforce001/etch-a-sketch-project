@@ -60,3 +60,47 @@ button {
     text-align: center;
     transition: all 0.2s;
 }
+
+button:hover {
+    cursor: pointer;
+}
+.blackButton {
+    background-color: black;
+    color: white;
+}
+.blackButton:hover {
+    background-color: rgba(128, 128, 128, 0.411);
+    color: rgb(148, 112, 34);
+}
+.greenButton {
+    background-color: rgba(76, 235, 13, 0.808);
+    color: black;
+}
+.greenButton:hover {
+    background-color: rgba(110, 115, 146, 0.808);
+    color: white;
+}
+.erasorButton {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.erasorButton:hover {
+    background-color:white;
+    color: red;
+}
+.randomButton {
+    background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
+}
+.randomButton:hover {
+    background: linear-gradient(0.25turn, #ecf013, #ebf8e1, #aecc03);
+}
+
+input {
+    width: 50px;
+}
+.mode {
+    margin-bottom: 5px;
+}
+.error {
+    display: none;
+}
