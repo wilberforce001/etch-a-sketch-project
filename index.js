@@ -1,3 +1,5 @@
+console.log("Hello")
+
 function populateBoard(size) {
     let board = document.querySelector('.board')
     let squares = board.querySelectorAll("div")
@@ -18,5 +20,9 @@ for (let i = 0; i < amount; i++) {
 populateBoard(16);
 
 function changeSize(input) {
-    populateBoard(input);
+    if(input >= 2 || input <= 100) {
+        populateBoard(input);
+    } else {
+        console.log("too many squares");
+    }
 }
