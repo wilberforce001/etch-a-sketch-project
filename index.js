@@ -11,3 +11,9 @@ for (let i = 0; i < 256; i++) {
 
 }
 }
+
+populateBoard(16);
+
+function changeSize(input) {
+    populateBoard(input);
+}
