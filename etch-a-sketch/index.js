@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
     console.log("Hello")
-    getSize();
     createBoard(32);
     
 })
@@ -24,11 +23,16 @@ function createBoard(size) {
 
 function getSize() {
     let input = prompt("What will be the size of the board?")
-    let message = document.querySelector("message");
+    let message = document.querySelector("#message");
     if(input == "") {
         message.innerHTML = "Please provide a number";
     } 
-
+    else if (input < 0 || input > 100) {
+        message.innerHTML = "Provide a number between 1 and 100"
+    }
+    else {
+        message.innerHTML = "Now you can play!"
+    }
 }
 
 // 
