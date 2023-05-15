@@ -4,3 +4,26 @@ body {
     align-items: center;
     flex-direction: column;
 }
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    margin-top: 20px;
+}
+.board {
+    border: 1px solid black;
+    width: 500px;
+    display: grid;
+    height: 500px;
+}
+/* 
