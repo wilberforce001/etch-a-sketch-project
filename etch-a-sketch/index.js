@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function(){
     console.log("Hello")
-    createBoard(32);
+    createBoard(16);
+
+    let btn_popup = document.querySelector("#popup");
+    btn_popup.addEventListener("click", function() {
+        let size = getSize();
+        createBoard(size);
+
+    })
     
 })
 
@@ -32,7 +39,8 @@ function getSize() {
     }
     else {
         message.innerHTML = "Now you can play!"
+        return input;
     }
 }
 
-// 
+//
